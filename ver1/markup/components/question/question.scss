@@ -39,6 +39,8 @@
 
       flex-wrap: wrap;
     }
+
+    // ver 1_1
     &._ver1_page1 {
       background: url(%=static=%assets/question/ver1_page1.jpg) no-repeat center;
       background-size: cover;
@@ -79,6 +81,206 @@
     }
     &._ver1_page5 {
       background: url(%=static=%assets/question/ver1_page5.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+
+    // ver 1_2
+    &._ver2_page1 {
+      background: url(%=static=%assets/question/ver2_page1.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver2_page2 {
+      background: url(%=static=%assets/question/ver2_page2.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver2_page3 {
+      background: url(%=static=%assets/question/ver2_page3.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+    &._ver2_page4 {
+      background: url(%=static=%assets/question/ver2_page4.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+
+    // ver 1_3
+    &._ver3_page1 {
+      background: url(%=static=%assets/question/ver3_page1.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver3_page2 {
+      background: url(%=static=%assets/question/ver3_page2.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver3_page3 {
+      background: url(%=static=%assets/question/ver3_page3.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+    &._ver3_page4 {
+      background: url(%=static=%assets/question/ver3_page4.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+
+    // ver 1_4
+    &._ver4_page1 {
+      background: url(%=static=%assets/question/ver4_page1.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver4_page2 {
+      background: url(%=static=%assets/question/ver4_page2.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver4_page3 {
+      background: url(%=static=%assets/question/ver4_page3.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+    &._ver4_page4 {
+      background: url(%=static=%assets/question/ver4_page4.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+
+    // ver 1_5
+    &._ver5_page1 {
+      background: url(%=static=%assets/question/ver5_page1.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver5_page2 {
+      background: url(%=static=%assets/question/ver5_page2.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver5_page3 {
+      background: url(%=static=%assets/question/ver5_page3.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+    &._ver5_page4 {
+      background: url(%=static=%assets/question/ver5_page4.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+
+    // ver 1_6
+    &._ver6_page1 {
+      background: url(%=static=%assets/question/ver6_page1.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver6_page2 {
+      background: url(%=static=%assets/question/ver6_page2.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 660px) {
+        background: none;
+      }
+    }
+    &._ver6_page3 {
+      background: url(%=static=%assets/question/ver6_page3.jpg) no-repeat center;
+      background-size: cover;
+      @media screen and (max-width: 1024px) {
+        background-position: left;
+        background-size: auto;
+      }
+      @media screen and (max-width: 960px) {
+        background: none;
+        background-color: $white;
+      }
+    }
+    &._ver6_page4 {
+      background: url(%=static=%assets/question/ver6_page4.jpg) no-repeat center;
       background-size: cover;
       @media screen and (max-width: 1024px) {
         background-position: left;
