@@ -1,0 +1,13 @@
+mixin registration(data)
+  .registration
+    .registration__title Регистрация: <br>подписка на контент
+
+    .registration__description Чтобы подключить доступ к Подписке на Контент, заполните следующую форму:
+
+    form.registration-form
+      .registration-form__label Введите номер мобильного телефона
+      input(type="text" value="7 916 987 11 11" placeholder="" name="phone").registration-form__field
+
+      .registration-form__hint Пример: +7 (916) 987 11 11 или +380 (50) 111 11 11
+
+      input(type="submit" value="Выслать пароль").registration-form__button

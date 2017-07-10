@@ -1,0 +1,10 @@
+mixin plot(data)
+  .plot
+    .plot__title Выберите сюжет игры
+
+    .plot__content
+      .plot__list
+        for item in plot
+          a(href="#" title="").plot-item
+            img(src="%=static=%images/assets/plot/#{item.img}" alt="#{item.title}").plot-item__image
+            .plot-item__title=item.title

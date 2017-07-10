@@ -1,0 +1,64 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.title {
+  font-family: 'Lato-Bold';
+  font-size: 60px;
+
+  margin-bottom: 40px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $rose;
+  @media screen and (max-width: 960px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 660px) {
+    font-size: 30px;
+
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+}
+
+.content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1426px;
+  margin: auto;
+  padding: 50px;
+
+  background-color: rgba($black_bg, .75);
+  @media screen and (max-width: 660px) {
+    padding: 20px;
+  }
+}
+
+.button {
+  font-size: 27px;
+
+  width: 100%;
+  height: 80px;
+
+  color: $white;
+  border: 0;
+  border-bottom: 4px solid $rose;
+  background-color: #c83c98;
+
+  @include transition;
+  &:hover {
+    background-color: $rose;
+  }
+  @media screen and (max-width: 660px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 320px) {
+    height: 60px;
+  }
+}

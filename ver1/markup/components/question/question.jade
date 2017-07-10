@@ -1,0 +1,31 @@
+mixin question(data)
+  .question(class="_#{data.checkbox}")
+    - if (data.title)
+      .question__title=data.title
+
+    .question__content
+      .question__list(class="_#{data.page}")
+        - if (!data.checkbox)
+          .question__column._right
+            a(href="#" title="").question__button
+              span=data.btnLeft
+          .question__column._left
+            a(href="#" title="").question__button
+              span=data.btnRight
+        - else if (data.checkbox == 'page3')
+          - var items = ['Вашу соседку', 'Жену вашего босса', 'Знаменитость', 'Персонаж из мультфильма', 'Другое'] 
+          +checkboxlist(items)
+        - else if (data.checkbox == 'page4')
+          - var items = ['Экстримальный секс', 'Групповой секс', 'Доминирование','Фантазии', 'Персонажи знаменитостей'] 
+          +checkboxlist(items)
+        - else
+          +registration
+
+mixin checkboxlist(items)
+  .checkboxlist.jsToggle(data-max="3")
+    .checkboxlist__title (Пожалуйста, выберите до 3 ответов) 
+    - for (var i = 0; i < items.length; i++)
+      .checkboxlist-item.jsToggleTrigger
+        .checkboxlist-item__title=items[i]
+        input(type="checkbox" value="#{i}").checkboxlist-item__val
+    input(type="submit" value="Продолжить").checkboxlist__button
