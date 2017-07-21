@@ -451,7 +451,7 @@ blockquote {
   width: 100%;
   max-width: 1426px;
   margin: auto;
-  padding: 50px;
+  padding: 43px;
   background-color: rgba(32, 41, 53, 0.75);
 }
 
@@ -723,13 +723,24 @@ body {
   }
 }
 
-.question__list._ver1_page1 {
-  background: url(../images/assets/question/ver1_page1.jpg) no-repeat center;
+.question__list._ver1_page1 .question__column._left {
+  background: url(../images/assets/question/ver1_page1_01.jpg) no-repeat 0 center;
   background-size: cover;
 }
 
 @media screen and (max-width: 660px) {
-  .question__list._ver1_page1 {
+  .question__list._ver1_page1 .question__column._left {
+    background: none;
+  }
+}
+
+.question__list._ver1_page1 .question__column._right {
+  background: url(../images/assets/question/ver1_page1_02.jpg) no-repeat 0 center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 660px) {
+  .question__list._ver1_page1 .question__column._right {
     background: none;
   }
 }
@@ -1156,6 +1167,7 @@ body {
 .question__column {
   position: relative;
   width: 50%;
+  max-width: 670px;
 }
 
 @media screen and (max-width: 660px) {

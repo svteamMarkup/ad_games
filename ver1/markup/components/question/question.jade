@@ -6,10 +6,10 @@ mixin question(data)
     .question__content
       .question__list(class="_#{data.page}")
         - if (!data.checkbox)
-          .question__column._right
+          .question__column._left
             a(href="#" title="").question__button
               span=data.btnLeft
-          .question__column._left
+          .question__column._right
             a(href="#" title="").question__button
               span=data.btnRight
         - else if (data.checkbox == 'page3')
